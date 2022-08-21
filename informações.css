@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Poppins:wght@200;500;900&family=VT323&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+:root{
+	--midnight: #1B1B1B;
+	--softwhite: #e6e6e6;
+	--background: rgba( 0, 0, 0, 0.6);
+	--softblack: rgba( 0, 0, 0, 0.8);
+	--hover-color: #bcbcbc;
+}
+
+body{
+	background-image: url(https://img.freepik.com/free-photo/luxury-black-sport-coupe-parking-snowy-road-forest_114579-4018.jpg?w=2000);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* configurações do cabeçalho */
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	background-color: var(--softblack);
+	color: white;
+}
+
+header ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	list-style: none;
+	margin-right: 30px;
+	gap: 15px;
+	animation: inicialização 1s linear;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: white;
+	transition: all 200ms linear;
+}
+
+header a:hover{
+	border-color: var(--hover-color);
+	color: var(--hover-color);
+}
+
+.logo{
+	margin-left: 20px;
+	font-family: 'Franklin Gothic';
+	animation: inicialização 1s linear;
+}
+
+.logo a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	transition: all 200ms linear;
+}
+
+.logo:hover{
+	color: var(--hover-color);
+}
+
+/* Configurações da Página */
+
+main{
+	width: 100%;
+	background-color: var(--background);
+}
+
+main div#main-layout{
+	max-width: 1000px;
+	min-width: 500px;
+	height: 100%;
+	background-color: var(--softwhite);
+	margin: auto;
+	padding: 10px 15px 0px 15px;
+	text-align: center;
+	font-family: system-ui, Roboto
+}
+
+main div#main-layout p{
+	text-align: justify;
+	font-size: 18px;
+	text-indent: 20px;
+	margin: 10px 20px 0px 20px;
+}
+
+/* configurações das sections */
+
+section{
+	animation: inicialização 1s linear;
+}
+
+section.sistema{
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	padding: 10px 20px 0px 20px;
+}
+
+/* sistema de pesquisa */
+
+div#layout-da-pesquisa{
+	width: 500px;
+	margin: 10px auto;
+}
+
+select#marca{
+	width: 100px;
+	margin-right: 15px;
+}
+
+select#ano{
+	width: 60px;
+}
+
+input#buscar{
+	padding: 2px;
+	display: block;
+	margin: 20px auto 0px auto;
+}
+
+/* footer */
+
+footer{
+	height: 150px;
+	background-color: var(--softblack);
+	color: white;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+	width: 700px;
+	height: 100%;
+	padding: 0px 40px 0px 120px;
+}
+
+.footer-container h3{
+	margin-bottom: 10px;
+}
+
+.footer-container .localização{
+	margin-bottom: 35px;
+}
+
+/* animações */
+
+@keyframes inicialização{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
